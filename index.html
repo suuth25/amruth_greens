@@ -107,6 +107,39 @@
       text-decoration: none;
       font-weight: 600;
     }
+
+    .hero-video {
+      max-width: 420px;
+      margin: 50px auto;
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    }
+
+    .hero-slider {
+      display: flex;
+      transition: transform 0.6s ease-in-out;
+    }
+
+    .hero-slide {
+      min-width: 100%;
+    }
+
+    .hero-slide iframe {
+      width: 100%;
+      height: 520px;
+      border: none;
+      border-radius: 20px;
+    }
+
+    .hero-title {
+      text-align: center;
+      color: #2e7d32;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
   </style>
 </head>
 
@@ -141,37 +174,36 @@
   </section>
 
   <!-- YouTube Shorts Section -->
-  <section style="max-width:420px;margin:40px auto;text-align:center;">
-    <h2 style="color:#2e7d32;margin-bottom:20px;">
-      Watch & Cook with Amruth Greens 🎥
-    </h2>
+  <section>
+  <h2 class="hero-title">Watch & Cook with Amruth Greens 🎥</h2>
 
-    <div style="display:flex;flex-direction:column;gap:30px;">
+  <div class="hero-video">
+    <div class="hero-slider" id="heroSlider">
 
-      <iframe
-        width="100%"
-        height="500"
-        src="https://www.youtube.com/embed/ZAYbl2XZzY0"
-        title="Amruth Greens Short"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        style="border-radius:16px;">
-      </iframe>
+      <!-- Slide 1 -->
+      <div class="hero-slide">
+        <iframe
+          src="https://www.youtube.com/embed/ZAYbl2XZzY0"
+          title="Amruth Greens Short 1"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
 
-      <iframe
-        width="100%"
-        height="500"
-        src="https://www.youtube.com/embed/OyUdbdC4zbY"
-        title="Amruth Greens Short"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        style="border-radius:16px;">
-      </iframe>
+      <!-- Slide 2 -->
+      <div class="hero-slide">
+        <iframe
+          src="https://www.youtube.com/embed/OyUdbdC4zbY"
+          title="Amruth Greens Short 2"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
 
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Storage Tip -->
   <div class="note">
